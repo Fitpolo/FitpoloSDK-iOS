@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'FitpoloSDK-iOS_Example' do
+  pod 'FitpoloSDK-iOS', :path => '../'
+
+  target 'FitpoloSDK-iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
