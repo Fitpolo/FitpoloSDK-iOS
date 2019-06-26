@@ -21,22 +21,79 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Chengang/FitpoloSDK-iOS'
+  s.homepage         = 'https://github.com/Fitpolo/FitpoloSDK-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chengang' => 'chengang@mokotechnology.com' }
-  s.source           = { :git => 'https://github.com/Chengang/FitpoloSDK-iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Fitpolo/FitpoloSDK-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'FitpoloSDK-iOS/Classes/**/*'
+  s.source_files = 'FitpoloSDK-iOS/Classes/mk_fitpoloCentralGlobalHeader.h'
   
-  # s.resource_bundles = {
-  #   'FitpoloSDK-iOS' => ['FitpoloSDK-iOS/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'header' do |ss|
+    ss.source_files = 'FitpoloSDK-iOS/Classes/header/**'
+  end
+  
+  s.subspec 'adopter' do |ss|
+    ss.source_files = 'FitpoloSDK-iOS/Classes/adopter/**'
+    ss.dependency 'FitpoloSDK-iOS/header'
+  end
+  
+  s.subspec 'log' do |ss|
+    ss.source_files = 'FitpoloSDK-iOS/Classes/log/**'
+    ss.dependency 'FitpoloSDK-iOS/header'
+  end
+  
+  s.subspec 'category' do |ss|
+    ss.source_files = 'FitpoloSDK-iOS/Classes/category/**'
+  end
+  
+  s.subspec 'task' do |ss|
+    ss.subspec 'fitpolo701' do |sss|
+      sss.source_files = 'FitpoloSDK-iOS/Classes/task/fitpolo701/**'
+      sss.dependency 'FitpoloSDK-iOS/header'
+      sss.dependency 'FitpoloSDK-iOS/adopter'
+      sss.dependency 'FitpoloSDK-iOS/log'
+    end
+    ss.subspec 'fitpoloCurrent' do |sss|
+      sss.source_files = 'FitpoloSDK-iOS/Classes/task/fitpoloCurrent/**'
+      sss.dependency 'FitpoloSDK-iOS/header'
+      sss.dependency 'FitpoloSDK-iOS/adopter'
+      sss.dependency 'FitpoloSDK-iOS/log'
+    end
+    ss.subspec 'operation' do |sss|
+      sss.source_files = 'FitpoloSDK-iOS/Classes/task/operation/**'
+      sss.dependency 'FitpoloSDK-iOS/header'
+      sss.dependency 'FitpoloSDK-iOS/task/fitpolo701'
+      sss.dependency 'FitpoloSDK-iOS/task/fitpoloCurrent'
+    end
+  end
+  
+  s.subspec 'centralManager' do |ss|
+    ss.source_files = 'FitpoloSDK-iOS/Classes/centralManager/**'
+    ss.dependency 'FitpoloSDK-iOS/header'
+    ss.dependency 'FitpoloSDK-iOS/adopter'
+    ss.dependency 'FitpoloSDK-iOS/category'
+    ss.dependency 'FitpoloSDK-iOS/log'
+    ss.dependency 'FitpoloSDK-iOS/task/operation'
+  end
+  
+  s.subspec 'interface' do |ss|
+    ss.subspec 'device' do |sss|
+      sss.source_files = 'FitpoloSDK-iOS/Classes/interface/device/**'
+    end
+    ss.subspec 'userData' do |sss|
+      sss.source_files = 'FitpoloSDK-iOS/Classes/interface/userData/**'
+    end
+    
+    ss.dependency 'FitpoloSDK-iOS/header'
+    ss.dependency 'FitpoloSDK-iOS/adopter'
+    ss.dependency 'FitpoloSDK-iOS/category'
+    ss.dependency 'FitpoloSDK-iOS/log'
+    ss.dependency 'FitpoloSDK-iOS/task/operation'
+    ss.dependency 'FitpoloSDK-iOS/centralManager'
+  end
+  
 end

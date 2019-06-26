@@ -1,0 +1,6 @@
+framework module FitpoloSDK_iOS {
+  umbrella header "FitpoloSDK-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,6 +8,10 @@
 
 #import "MKConfigAlarmClockModel.h"
 
+@implementation MKClockStatusModel
+
+@end
+
 @implementation MKConfigAlarmClockModel
 
 @end

@@ -10,7 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MKConfigUserDataModel : NSObject
+@interface MKConfigUserDataModel : NSObject<mk_configUserDataProtocol>
+
+@property (nonatomic, assign)NSInteger height;
+
+@property (nonatomic, assign)NSInteger weight;
+
+@property (nonatomic, assign)mk_fitpoloGender gender;
+
+/**
+ 年龄,1~100
+ */
+@property (nonatomic, assign)NSInteger userAge;
 
 @end
 

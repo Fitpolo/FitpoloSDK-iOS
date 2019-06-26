@@ -7,23 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0010709A22B22372008AFFE7 /* MKScanPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0010709922B22372008AFFE7 /* MKScanPageController.m */; };
+		001070A122B224F6008AFFE7 /* MKBindDeviceLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0010709B22B224F5008AFFE7 /* MKBindDeviceLayout.m */; };
+		001070A322B224F6008AFFE7 /* MKBindDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0010709E22B224F5008AFFE7 /* MKBindDeviceCell.m */; };
+		001070BE22B228ED008AFFE7 /* deviceModule_fitpolo705Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070B622B228ED008AFFE7 /* deviceModule_fitpolo705Icon@2x.png */; };
+		001070BF22B228ED008AFFE7 /* deviceModule_fitpolo705Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070B722B228ED008AFFE7 /* deviceModule_fitpolo705Icon@3x.png */; };
+		001070C022B228ED008AFFE7 /* deviceModule_fitpolo707Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070B822B228ED008AFFE7 /* deviceModule_fitpolo707Icon@2x.png */; };
+		001070C122B228ED008AFFE7 /* deviceModule_fitpolo707Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070B922B228ED008AFFE7 /* deviceModule_fitpolo707Icon@3x.png */; };
+		001070C222B228ED008AFFE7 /* deviceModule_fitpolo701Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070BA22B228ED008AFFE7 /* deviceModule_fitpolo701Icon@2x.png */; };
+		001070C322B228ED008AFFE7 /* deviceModule_fitpolo701Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070BB22B228ED008AFFE7 /* deviceModule_fitpolo701Icon@3x.png */; };
+		001070C422B228ED008AFFE7 /* deviceModule_fitpolo706Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070BC22B228ED008AFFE7 /* deviceModule_fitpolo706Icon@3x.png */; };
+		001070C522B228ED008AFFE7 /* deviceModule_fitpolo706Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070BD22B228ED008AFFE7 /* deviceModule_fitpolo706Icon@2x.png */; };
+		001070C822B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070C622B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png */; };
+		001070C922B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070C722B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png */; };
+		001070CD22B235F8008AFFE7 /* MKHudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 001070CB22B235F8008AFFE7 /* MKHudManager.m */; };
+		00914D6D22B3519E00E89753 /* MKReadDataTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D6522B3519E00E89753 /* MKReadDataTimeModel.m */; };
+		00914D6E22B3519E00E89753 /* MKConfigInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D6722B3519E00E89753 /* MKConfigInterfaceController.m */; };
+		00914D6F22B3519E00E89753 /* MKReadInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D6822B3519E00E89753 /* MKReadInterfaceController.m */; };
+		00914D7022B3519E00E89753 /* MKInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D6C22B3519E00E89753 /* MKInterfaceController.m */; };
+		00914D7322B351C300E89753 /* MKAncsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7222B351C300E89753 /* MKAncsModel.m */; };
+		00914D7622B3528D00E89753 /* MKConfigAlarmClockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7522B3528D00E89753 /* MKConfigAlarmClockModel.m */; };
+		00914D7922B371DC00E89753 /* MKConfigPeriodTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7822B371DC00E89753 /* MKConfigPeriodTimeModel.m */; };
+		00914D7C22B377F100E89753 /* MKCustomScreenDisplayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7B22B377F100E89753 /* MKCustomScreenDisplayModel.m */; };
+		00914D7F22B37BD500E89753 /* MKConfigUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7E22B37BD500E89753 /* MKConfigUserDataModel.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MKAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MKViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B491F491F3B210FC7BBEB3E1 /* Pods_FitpoloSDK_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A178D4E0C991EC4CFA4B9F /* Pods_FitpoloSDK_iOS_Example.framework */; };
-		BCFD0BDD77AF710AFAB3EF3B /* Pods_FitpoloSDK_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C3219789E355D7B2F8046 /* Pods_FitpoloSDK_iOS_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +56,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A9C3219789E355D7B2F8046 /* Pods_FitpoloSDK_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitpoloSDK_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CFBBE3CF4B52F51B199A8B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2EB88843B8A62F6B94B9B9E1 /* FitpoloSDK-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "FitpoloSDK-iOS.podspec"; path = "../FitpoloSDK-iOS.podspec"; sourceTree = "<group>"; };
-		3AD56A7BBE208B7FCF840DC1 /* Pods-FitpoloSDK-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitpoloSDK-iOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FitpoloSDK-iOS_Tests/Pods-FitpoloSDK-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4961C2031B40F3BD0F3DC1F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0010709822B22372008AFFE7 /* MKScanPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKScanPageController.h; sourceTree = "<group>"; };
+		0010709922B22372008AFFE7 /* MKScanPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKScanPageController.m; sourceTree = "<group>"; };
+		0010709B22B224F5008AFFE7 /* MKBindDeviceLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBindDeviceLayout.m; sourceTree = "<group>"; };
+		0010709D22B224F5008AFFE7 /* MKBindDeviceLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBindDeviceLayout.h; sourceTree = "<group>"; };
+		0010709E22B224F5008AFFE7 /* MKBindDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBindDeviceCell.m; sourceTree = "<group>"; };
+		0010709F22B224F5008AFFE7 /* MKBindDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBindDeviceCell.h; sourceTree = "<group>"; };
+		001070B622B228ED008AFFE7 /* deviceModule_fitpolo705Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo705Icon@2x.png"; sourceTree = "<group>"; };
+		001070B722B228ED008AFFE7 /* deviceModule_fitpolo705Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo705Icon@3x.png"; sourceTree = "<group>"; };
+		001070B822B228ED008AFFE7 /* deviceModule_fitpolo707Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo707Icon@2x.png"; sourceTree = "<group>"; };
+		001070B922B228ED008AFFE7 /* deviceModule_fitpolo707Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo707Icon@3x.png"; sourceTree = "<group>"; };
+		001070BA22B228ED008AFFE7 /* deviceModule_fitpolo701Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo701Icon@2x.png"; sourceTree = "<group>"; };
+		001070BB22B228ED008AFFE7 /* deviceModule_fitpolo701Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo701Icon@3x.png"; sourceTree = "<group>"; };
+		001070BC22B228ED008AFFE7 /* deviceModule_fitpolo706Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo706Icon@3x.png"; sourceTree = "<group>"; };
+		001070BD22B228ED008AFFE7 /* deviceModule_fitpolo706Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo706Icon@2x.png"; sourceTree = "<group>"; };
+		001070C622B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_refreshIcon@2x.png"; sourceTree = "<group>"; };
+		001070C722B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_refreshIcon@3x.png"; sourceTree = "<group>"; };
+		001070CB22B235F8008AFFE7 /* MKHudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHudManager.m; sourceTree = "<group>"; };
+		001070CC22B235F8008AFFE7 /* MKHudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHudManager.h; sourceTree = "<group>"; };
+		00914D6422B3519E00E89753 /* MKReadDataTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKReadDataTimeModel.h; sourceTree = "<group>"; };
+		00914D6522B3519E00E89753 /* MKReadDataTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKReadDataTimeModel.m; sourceTree = "<group>"; };
+		00914D6722B3519E00E89753 /* MKConfigInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKConfigInterfaceController.m; sourceTree = "<group>"; };
+		00914D6822B3519E00E89753 /* MKReadInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKReadInterfaceController.m; sourceTree = "<group>"; };
+		00914D6922B3519E00E89753 /* MKInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKInterfaceController.h; sourceTree = "<group>"; };
+		00914D6A22B3519E00E89753 /* MKConfigInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKConfigInterfaceController.h; sourceTree = "<group>"; };
+		00914D6B22B3519E00E89753 /* MKReadInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKReadInterfaceController.h; sourceTree = "<group>"; };
+		00914D6C22B3519E00E89753 /* MKInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKInterfaceController.m; sourceTree = "<group>"; };
+		00914D7122B351C300E89753 /* MKAncsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAncsModel.h; sourceTree = "<group>"; };
+		00914D7222B351C300E89753 /* MKAncsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAncsModel.m; sourceTree = "<group>"; };
+		00914D7422B3528D00E89753 /* MKConfigAlarmClockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKConfigAlarmClockModel.h; sourceTree = "<group>"; };
+		00914D7522B3528D00E89753 /* MKConfigAlarmClockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKConfigAlarmClockModel.m; sourceTree = "<group>"; };
+		00914D7722B371DC00E89753 /* MKConfigPeriodTimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKConfigPeriodTimeModel.h; sourceTree = "<group>"; };
+		00914D7822B371DC00E89753 /* MKConfigPeriodTimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKConfigPeriodTimeModel.m; sourceTree = "<group>"; };
+		00914D7A22B377F100E89753 /* MKCustomScreenDisplayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKCustomScreenDisplayModel.h; sourceTree = "<group>"; };
+		00914D7B22B377F100E89753 /* MKCustomScreenDisplayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKCustomScreenDisplayModel.m; sourceTree = "<group>"; };
+		00914D7D22B37BD500E89753 /* MKConfigUserDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKConfigUserDataModel.h; sourceTree = "<group>"; };
+		00914D7E22B37BD500E89753 /* MKConfigUserDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKConfigUserDataModel.m; sourceTree = "<group>"; };
+		2CFBBE3CF4B52F51B199A8B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2EB88843B8A62F6B94B9B9E1 /* FitpoloSDK-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "FitpoloSDK-iOS.podspec"; path = "../FitpoloSDK-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4961C2031B40F3BD0F3DC1F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FitpoloSDK-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitpoloSDK-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,8 +105,6 @@
 		6003F59B195388D20070C39A /* FitpoloSDK-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FitpoloSDK-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* MKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* MKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* FitpoloSDK-iOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitpoloSDK-iOS_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,9 +112,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		822BF0FDA4BC4AD18FEEADCE /* Pods-FitpoloSDK-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitpoloSDK-iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-FitpoloSDK-iOS_Tests/Pods-FitpoloSDK-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FFD665EB521E681868FBEA6 /* Pods-FitpoloSDK-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitpoloSDK-iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-FitpoloSDK-iOS_Example/Pods-FitpoloSDK-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CA3085AF7198B11961DA4E45 /* Pods-FitpoloSDK-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitpoloSDK-iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-FitpoloSDK-iOS_Example/Pods-FitpoloSDK-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D2A178D4E0C991EC4CFA4B9F /* Pods_FitpoloSDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitpoloSDK_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,13 +136,126 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				BCFD0BDD77AF710AFAB3EF3B /* Pods_FitpoloSDK_iOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0010709322B22360008AFFE7 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				001070CE22B23D37008AFFE7 /* interfacePage */,
+				001070CA22B235F8008AFFE7 /* MKHudManager */,
+				0010709422B22360008AFFE7 /* scanPage */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		0010709422B22360008AFFE7 /* scanPage */ = {
+			isa = PBXGroup;
+			children = (
+				0010709522B22360008AFFE7 /* controller */,
+				0010709622B22360008AFFE7 /* model */,
+				0010709722B22360008AFFE7 /* view */,
+			);
+			path = scanPage;
+			sourceTree = "<group>";
+		};
+		0010709522B22360008AFFE7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0010709822B22372008AFFE7 /* MKScanPageController.h */,
+				0010709922B22372008AFFE7 /* MKScanPageController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		0010709622B22360008AFFE7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0010709722B22360008AFFE7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0010709F22B224F5008AFFE7 /* MKBindDeviceCell.h */,
+				0010709E22B224F5008AFFE7 /* MKBindDeviceCell.m */,
+				0010709D22B224F5008AFFE7 /* MKBindDeviceLayout.h */,
+				0010709B22B224F5008AFFE7 /* MKBindDeviceLayout.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		001070B522B228ED008AFFE7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				001070C622B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png */,
+				001070C722B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png */,
+				001070B622B228ED008AFFE7 /* deviceModule_fitpolo705Icon@2x.png */,
+				001070B722B228ED008AFFE7 /* deviceModule_fitpolo705Icon@3x.png */,
+				001070B822B228ED008AFFE7 /* deviceModule_fitpolo707Icon@2x.png */,
+				001070B922B228ED008AFFE7 /* deviceModule_fitpolo707Icon@3x.png */,
+				001070BA22B228ED008AFFE7 /* deviceModule_fitpolo701Icon@2x.png */,
+				001070BB22B228ED008AFFE7 /* deviceModule_fitpolo701Icon@3x.png */,
+				001070BC22B228ED008AFFE7 /* deviceModule_fitpolo706Icon@3x.png */,
+				001070BD22B228ED008AFFE7 /* deviceModule_fitpolo706Icon@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		001070CA22B235F8008AFFE7 /* MKHudManager */ = {
+			isa = PBXGroup;
+			children = (
+				001070CC22B235F8008AFFE7 /* MKHudManager.h */,
+				001070CB22B235F8008AFFE7 /* MKHudManager.m */,
+			);
+			path = MKHudManager;
+			sourceTree = "<group>";
+		};
+		001070CE22B23D37008AFFE7 /* interfacePage */ = {
+			isa = PBXGroup;
+			children = (
+				00914D6622B3519E00E89753 /* controller */,
+				00914D6322B3519E00E89753 /* model */,
+			);
+			path = interfacePage;
+			sourceTree = "<group>";
+		};
+		00914D6322B3519E00E89753 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				00914D6422B3519E00E89753 /* MKReadDataTimeModel.h */,
+				00914D6522B3519E00E89753 /* MKReadDataTimeModel.m */,
+				00914D7122B351C300E89753 /* MKAncsModel.h */,
+				00914D7222B351C300E89753 /* MKAncsModel.m */,
+				00914D7422B3528D00E89753 /* MKConfigAlarmClockModel.h */,
+				00914D7522B3528D00E89753 /* MKConfigAlarmClockModel.m */,
+				00914D7722B371DC00E89753 /* MKConfigPeriodTimeModel.h */,
+				00914D7822B371DC00E89753 /* MKConfigPeriodTimeModel.m */,
+				00914D7A22B377F100E89753 /* MKCustomScreenDisplayModel.h */,
+				00914D7B22B377F100E89753 /* MKCustomScreenDisplayModel.m */,
+				00914D7D22B37BD500E89753 /* MKConfigUserDataModel.h */,
+				00914D7E22B37BD500E89753 /* MKConfigUserDataModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		00914D6622B3519E00E89753 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				00914D6922B3519E00E89753 /* MKInterfaceController.h */,
+				00914D6C22B3519E00E89753 /* MKInterfaceController.m */,
+				00914D6B22B3519E00E89753 /* MKReadInterfaceController.h */,
+				00914D6822B3519E00E89753 /* MKReadInterfaceController.m */,
+				00914D6A22B3519E00E89753 /* MKConfigInterfaceController.h */,
+				00914D6722B3519E00E89753 /* MKConfigInterfaceController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +285,6 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				D2A178D4E0C991EC4CFA4B9F /* Pods_FitpoloSDK_iOS_Example.framework */,
-				2A9C3219789E355D7B2F8046 /* Pods_FitpoloSDK_iOS_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,12 +292,10 @@
 		6003F593195388D20070C39A /* Example for FitpoloSDK-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				001070B522B228ED008AFFE7 /* Resource */,
+				0010709322B22360008AFFE7 /* Functions */,
 				6003F59C195388D20070C39A /* MKAppDelegate.h */,
 				6003F59D195388D20070C39A /* MKAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* MKViewController.h */,
-				6003F5A6195388D20070C39A /* MKViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -190,10 +348,7 @@
 			children = (
 				CA3085AF7198B11961DA4E45 /* Pods-FitpoloSDK-iOS_Example.debug.xcconfig */,
 				8FFD665EB521E681868FBEA6 /* Pods-FitpoloSDK-iOS_Example.release.xcconfig */,
-				3AD56A7BBE208B7FCF840DC1 /* Pods-FitpoloSDK-iOS_Tests.debug.xcconfig */,
-				822BF0FDA4BC4AD18FEEADCE /* Pods-FitpoloSDK-iOS_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -223,7 +378,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "FitpoloSDK-iOS_Tests" */;
 			buildPhases = (
-				DE115CBB92E6D88AEFDDA704 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -245,9 +399,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MK;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Chengang;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 9S6N592WKP;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -255,7 +412,7 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "FitpoloSDK-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -277,10 +434,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				001070C822B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				001070C522B228ED008AFFE7 /* deviceModule_fitpolo706Icon@2x.png in Resources */,
+				001070C022B228ED008AFFE7 /* deviceModule_fitpolo707Icon@2x.png in Resources */,
+				001070BE22B228ED008AFFE7 /* deviceModule_fitpolo705Icon@2x.png in Resources */,
+				001070C122B228ED008AFFE7 /* deviceModule_fitpolo707Icon@3x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				001070BF22B228ED008AFFE7 /* deviceModule_fitpolo705Icon@3x.png in Resources */,
+				001070C222B228ED008AFFE7 /* deviceModule_fitpolo701Icon@2x.png in Resources */,
+				001070C422B228ED008AFFE7 /* deviceModule_fitpolo706Icon@3x.png in Resources */,
+				001070C922B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png in Resources */,
+				001070C322B228ED008AFFE7 /* deviceModule_fitpolo701Icon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,10 +468,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FitpoloSDK-iOS_Example/Pods-FitpoloSDK-iOS_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FitpoloSDK-iOS/FitpoloSDK_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FitpoloSDK_iOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -335,28 +508,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE115CBB92E6D88AEFDDA704 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FitpoloSDK-iOS_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -364,8 +515,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00914D6D22B3519E00E89753 /* MKReadDataTimeModel.m in Sources */,
+				0010709A22B22372008AFFE7 /* MKScanPageController.m in Sources */,
 				6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* MKViewController.m in Sources */,
+				00914D7322B351C300E89753 /* MKAncsModel.m in Sources */,
+				00914D7622B3528D00E89753 /* MKConfigAlarmClockModel.m in Sources */,
+				00914D7F22B37BD500E89753 /* MKConfigUserDataModel.m in Sources */,
+				00914D6F22B3519E00E89753 /* MKReadInterfaceController.m in Sources */,
+				00914D6E22B3519E00E89753 /* MKConfigInterfaceController.m in Sources */,
+				00914D7922B371DC00E89753 /* MKConfigPeriodTimeModel.m in Sources */,
+				00914D7022B3519E00E89753 /* MKInterfaceController.m in Sources */,
+				001070A122B224F6008AFFE7 /* MKBindDeviceLayout.m in Sources */,
+				001070CD22B235F8008AFFE7 /* MKHudManager.m in Sources */,
+				00914D7C22B377F100E89753 /* MKCustomScreenDisplayModel.m in Sources */,
+				001070A322B224F6008AFFE7 /* MKBindDeviceCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,14 +568,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -420,23 +575,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -460,22 +629,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -494,9 +677,12 @@
 			baseConfigurationReference = CA3085AF7198B11961DA4E45 /* Pods-FitpoloSDK-iOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				DEVELOPMENT_TEAM = 9S6N592WKP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FitpoloSDK-iOS/FitpoloSDK-iOS-Prefix.pch";
 				INFOPLIST_FILE = "FitpoloSDK-iOS/FitpoloSDK-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,9 +695,12 @@
 			baseConfigurationReference = 8FFD665EB521E681868FBEA6 /* Pods-FitpoloSDK-iOS_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				DEVELOPMENT_TEAM = 9S6N592WKP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FitpoloSDK-iOS/FitpoloSDK-iOS-Prefix.pch";
 				INFOPLIST_FILE = "FitpoloSDK-iOS/FitpoloSDK-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,7 +710,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AD56A7BBE208B7FCF840DC1 /* Pods-FitpoloSDK-iOS_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -545,7 +733,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 822BF0FDA4BC4AD18FEEADCE /* Pods-FitpoloSDK-iOS_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
