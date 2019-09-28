@@ -676,7 +676,7 @@ static NSInteger const scanConnectMacCount = 2;
     if (data.length != 9) {
         return nil;
     }
-    NSString *temp = data.description;
+    NSString *temp = [mk_fitpoloAdopter hexStringFromData:data];
     temp = [temp stringByReplacingOccurrencesOfString:@" " withString:@""];
     temp = [temp stringByReplacingOccurrencesOfString:@"<" withString:@""];
     temp = [temp stringByReplacingOccurrencesOfString:@">" withString:@""];
