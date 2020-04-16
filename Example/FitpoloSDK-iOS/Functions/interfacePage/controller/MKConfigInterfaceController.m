@@ -16,11 +16,19 @@
 #import "MKCustomScreenDisplayModel.h"
 #import "MKConfigUserDataModel.h"
 
+#import "MKDeviceModulePhotoPicker.h"
+
+#define RGB888_RED      0x00ff0000
+#define RGB888_GREEN    0x0000ff00
+#define RGB888_BLUE     0x000000ff
+
 @interface MKConfigInterfaceController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView *tableView;
 
 @property (nonatomic, strong)NSMutableArray *dataList;
+
+@property (nonatomic, strong)MKDeviceModulePhotoPicker *photoPicker;
 
 @end
 
@@ -203,6 +211,11 @@
     if (row == 21) {
         //设置搜索手机功能
         [self configSearchPhone];
+        return;
+    }
+    if (row == 22) {
+        //配置UI
+        [self configDialUI];
         return;
     }
 }
@@ -429,6 +442,112 @@
     }];
 }
 
+- (void)configDialUI {
+    __weak __typeof(&*self)weakSelf = self;
+    [self.photoPicker showPhotoPickerBlock:^(UIImage * _Nonnull bigImage, UIImage * _Nonnull smallImage) {
+        [weakSelf processSmallImage:smallImage];
+    } imageSize:CGSizeMake(240, 240)];
+}
+
+- (void)processSmallImage:(UIImage *)image {
+    if (!image || ![image isKindOfClass:UIImage.class]) {
+        return;
+    }
+    [[MKHudManager share] showHUDWithTitle:@"Waiting..." inView:self.view isPenetration:NO];
+    CGImageAlphaInfo alphaInfo = CGImageGetAlphaInfo(image.CGImage);
+    CGColorSpaceRef colorRef = CGColorSpaceCreateDeviceRGB();
+
+    float width = image.size.width;
+    float height = image.size.height;
+
+    // Get source image data
+    UInt32 *imageData = (UInt32 *) malloc(width * height * 4);
+
+    CGContextRef imageContext = CGBitmapContextCreate(imageData,
+            width, height,
+            8, (width * 4),
+            colorRef, alphaInfo);
+
+    CGContextDrawImage(imageContext, CGRectMake(0, 0, width, height), image.CGImage);
+    CGContextRelease(imageContext);
+    CGColorSpaceRelease(colorRef);
+
+    UInt32 * currentPixel = imageData;
+    NSMutableData *binData = [NSMutableData data];
+    for (NSUInteger j = 0; j < height; j++) {
+        for (NSUInteger i = 0; i < width; i++) {
+            UInt32 color = [self colorHexValue:(*currentPixel)];
+            UInt32 rgb565 = [self RGB888ToRGB565:color];
+            NSString *temp = [NSString stringWithFormat:@"%1x",(unsigned int)rgb565];
+            if (temp.length == 1) {
+                temp = [@"000" stringByAppendingString:temp];
+            }else if (temp.length == 2) {
+                temp = [@"00" stringByAppendingString:temp];
+            }else if (temp.length == 3) {
+                temp = [@"0" stringByAppendingString:temp];
+            }
+            NSData *tempData = [mk_fitpoloAdopter stringToData:temp];
+            [binData appendData:tempData];
+            currentPixel++;
+        }
+    }
+    [MKDeviceInterface configH709DialStyleCustomUI:MKH709CustomUIIndex0 sucBlock:^(id returnData) {
+        [self startUpdateUI:binData];
+    } failedBlock:^(NSError *error) {
+        [[MKHudManager share] hide];
+        [self showAlertWithMsg:error.userInfo[@"errorInfo"]];
+    }];
+}
+
+- (void)startUpdateUI:(NSData *)uiData {
+    [[mk_fitpoloUpdateCenter sharedInstance] startUpdateProcessWithPackageData:uiData successBlock:^{
+        [[MKHudManager share] hide];
+        [self showAlertWithMsg:@"Success"];
+    } progressBlock:^(CGFloat progress) {
+        
+    } failedBlock:^(NSError * _Nonnull error) {
+        [[MKHudManager share] hide];
+        [self showAlertWithMsg:error.userInfo[@"errorInfo"]];
+    }];
+}
+
+- (UInt32)colorHexValue:(UInt32)origColor {
+    NSString *tempRGB888 = [NSString stringWithFormat:@"%1x",(unsigned int)origColor];
+    NSInteger len = tempRGB888.length;
+    NSString *rgb888 = @"";
+    for (NSInteger i = 0; i < (8 - len); i ++) {
+        rgb888 = [@"0" stringByAppendingString:rgb888];
+    }
+    NSString *rgb = [rgb888 stringByAppendingString:tempRGB888];
+    NSInteger bigData = [self bigData:rgb];
+    return ((UInt32)bigData);
+}
+
+- (NSInteger)bigData:(NSString *)content {
+    NSMutableArray *list = [NSMutableArray array];
+    for (NSInteger i = 0; i < content.length / 2; i ++) {
+        NSString *string = [content substringWithRange:NSMakeRange(2 * i, 2)];
+        [list addObject:string];
+    }
+    NSString *tempString = @"";
+    for (NSInteger i = content.length / 2 - 1; i >= 0; i--) {
+        tempString = [tempString stringByAppendingString:list[i]];
+    }
+    return [mk_fitpoloAdopter getDecimalWithHex:tempString range:NSMakeRange(0, tempString.length)];
+}
+
+- (UInt32)RGB888ToRGB565:(UInt32)n888Color {
+    UInt32 n565Color = 0;
+    // 获取RGB单色，并截取高位
+    UInt32 cRed   = (n888Color & RGB888_RED)   >> 19;
+    UInt32 cGreen = (n888Color & RGB888_GREEN) >> 10;
+    UInt32 cBlue  = (n888Color & RGB888_BLUE)  >> 3;
+    
+    // 连接
+    n565Color = (cRed << 11) + (cGreen << 5) + (cBlue << 0);
+    return n565Color;
+}
+
 #pragma mark - private method
 - (void)showAlertWithMsg:(NSString *)msg{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Dismiss"
@@ -472,6 +591,14 @@
     [self.dataList addObject:@"set current the screen display list"];
     [self.dataList addObject:@"set record steps intervial"];
     [self.dataList addObject:@"set finding mobilephone function"];
+    
+    if ([mk_fitpoloCentralManager sharedInstance].deviceType != mk_fitpolo709) {
+        [self.tableView reloadData];
+        return;
+    }
+    
+    [self.dataList addObject:@"Configure dial UI"];
+    
     [self.tableView reloadData];
 }
 
@@ -495,6 +622,13 @@
         _dataList = [NSMutableArray array];
     }
     return _dataList;
+}
+
+- (MKDeviceModulePhotoPicker *)photoPicker {
+    if (!_photoPicker) {
+        _photoPicker = [[MKDeviceModulePhotoPicker alloc] init];
+    }
+    return _photoPicker;
 }
 
 @end

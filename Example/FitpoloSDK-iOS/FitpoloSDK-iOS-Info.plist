@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>If not allowed ,you will be unable to choose photos from Camera Roll.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>fitpolo need your approval to save the picture the photo album</string>
+	<key>NSCameraUsageDescription</key>
+	<string>fitpolo need to use the camera take pictures, which is used to update your avatar</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>fitpolo need to use your mobile phone bluetooth to communicate with devices</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>fitpolo need to use your mobile phone bluetooth to communicate with devices</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

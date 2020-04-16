@@ -414,6 +414,21 @@ typedef NS_ENUM(NSInteger, mk_alarmClockIndex) {
                       failedBlock:failedBlock];
 }
 
++ (void)configH709DialStyleCustomUI:(MKH709CustomUIIndex)index
+                           sucBlock:(mk_deviceInterfaceSucBlock)sucBlock
+                        failedBlock:(mk_deviceInterfaceFailedBlock)failedBlock {
+    if (currentCentral.deviceType != mk_fitpolo709) {
+        [mk_fitpoloAdopter operationUnsupportCommandErrorBlock:failedBlock];
+        return;
+    }
+    NSString *commandString = (index == MKH709CustomUIIndex1 ? @"b222050001c20001" : @"b222050001c20000");
+    [self addConfigTaskWithTaskID:mk_configCustomDialStyleOperation
+                         resetNum:NO
+                    commandString:commandString
+                         sucBlock:sucBlock
+                      failedBlock:failedBlock];
+}
+
 #pragma mark - private method
 
 + (void)addConfigTaskWithTaskID:(mk_taskOperationID)taskID

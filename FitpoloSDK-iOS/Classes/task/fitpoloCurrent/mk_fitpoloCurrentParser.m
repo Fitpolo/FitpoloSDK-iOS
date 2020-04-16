@@ -316,6 +316,9 @@
     }else if ([function isEqualToString:@"21"]) {
         //设置706计步间隔
         operationID = mk_configStepIntervalOperation;
+    }else if ([function isEqualToString:@"22"]) {
+        //设置自定义表盘样式
+        operationID = mk_configCustomDialStyleOperation;
     }
     BOOL result = ([[content substringWithRange:NSMakeRange(6, 2)] isEqualToString:@"00"]);
     returnData = @{

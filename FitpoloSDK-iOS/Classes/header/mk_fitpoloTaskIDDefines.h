@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, mk_taskOperationID) {
     mk_readMemoryDataOperation,           //获取内存数据
     mk_readConfigurationParametersOperation,    //获取配置参数
     
-    #pragma mark - 706特有
+#pragma mark - 706特有
     mk_readDateFormatterOperation,         //获取706手环当前显示的日期制式
     mk_configDateFormatterOperation,       //设置706手环当前显示的日期格式
     mk_readLanguageOperation,              //获取706手环当前显示的语言
@@ -71,4 +71,6 @@ typedef NS_ENUM(NSInteger, mk_taskOperationID) {
     mk_configStepIntervalOperation,         //配置706计步间隔
     mk_readStepIntervalDataOperation,       //读取706间隔计步数据
     mk_configSearchPhoneOperation,          //搜索手机功能
+#pragma mark - 709特有
+    mk_configCustomDialStyleOperation,      //配置自定义表盘样式
 };

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FitpoloSDK-iOS'
-  s.version          = '0.1.2'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of FitpoloSDK-iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -94,6 +94,14 @@ TODO: Add long description of the pod here.
     ss.dependency 'FitpoloSDK-iOS/log'
     ss.dependency 'FitpoloSDK-iOS/task/operation'
     ss.dependency 'FitpoloSDK-iOS/centralManager'
+  end
+  
+  s.subspec 'update' do |ss|
+    ss.source_files = 'FitpoloSDK-iOS/Classes/update/**'
+    
+    ss.dependency 'FitpoloSDK-iOS/adopter'
+    ss.dependency 'FitpoloSDK-iOS/centralManager'
+    ss.dependency 'FitpoloSDK-iOS/header'
   end
   
 end

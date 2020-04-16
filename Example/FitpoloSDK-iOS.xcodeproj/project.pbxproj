@@ -21,6 +21,10 @@
 		001070C822B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070C622B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png */; };
 		001070C922B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001070C722B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png */; };
 		001070CD22B235F8008AFFE7 /* MKHudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 001070CB22B235F8008AFFE7 /* MKHudManager.m */; };
+		009137D62447FF0B0014EA95 /* deviceModule_fitpolo709Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009137D42447FF0B0014EA95 /* deviceModule_fitpolo709Icon@2x.png */; };
+		009137D72447FF0B0014EA95 /* deviceModule_fitpolo709Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009137D52447FF0B0014EA95 /* deviceModule_fitpolo709Icon@3x.png */; };
+		009137D9244806400014EA95 /* dialUI2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009137D8244806400014EA95 /* dialUI2.jpg */; };
+		009137DD244808A80014EA95 /* MKDeviceModulePhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 009137DC244808A70014EA95 /* MKDeviceModulePhotoPicker.m */; };
 		00914D6D22B3519E00E89753 /* MKReadDataTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D6522B3519E00E89753 /* MKReadDataTimeModel.m */; };
 		00914D6E22B3519E00E89753 /* MKConfigInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D6722B3519E00E89753 /* MKConfigInterfaceController.m */; };
 		00914D6F22B3519E00E89753 /* MKReadInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D6822B3519E00E89753 /* MKReadInterfaceController.m */; };
@@ -30,6 +34,7 @@
 		00914D7922B371DC00E89753 /* MKConfigPeriodTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7822B371DC00E89753 /* MKConfigPeriodTimeModel.m */; };
 		00914D7C22B377F100E89753 /* MKCustomScreenDisplayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7B22B377F100E89753 /* MKCustomScreenDisplayModel.m */; };
 		00914D7F22B37BD500E89753 /* MKConfigUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00914D7E22B37BD500E89753 /* MKConfigUserDataModel.m */; };
+		00D42A112447FCB3003AA084 /* dialUI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00D42A102447FCB3003AA084 /* dialUI.jpg */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -74,6 +79,11 @@
 		001070C722B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_refreshIcon@3x.png"; sourceTree = "<group>"; };
 		001070CB22B235F8008AFFE7 /* MKHudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHudManager.m; sourceTree = "<group>"; };
 		001070CC22B235F8008AFFE7 /* MKHudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHudManager.h; sourceTree = "<group>"; };
+		009137D42447FF0B0014EA95 /* deviceModule_fitpolo709Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo709Icon@2x.png"; sourceTree = "<group>"; };
+		009137D52447FF0B0014EA95 /* deviceModule_fitpolo709Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deviceModule_fitpolo709Icon@3x.png"; sourceTree = "<group>"; };
+		009137D8244806400014EA95 /* dialUI2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dialUI2.jpg; path = "../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1b89d351ece5b595dc3c0529f25ad6d8/Message/MessageTemp/0b0e3d899106279d53f79df19985fd82/Image/dialUI2.jpg"; sourceTree = "<group>"; };
+		009137DB244808A70014EA95 /* MKDeviceModulePhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDeviceModulePhotoPicker.h; sourceTree = "<group>"; };
+		009137DC244808A70014EA95 /* MKDeviceModulePhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDeviceModulePhotoPicker.m; sourceTree = "<group>"; };
 		00914D6422B3519E00E89753 /* MKReadDataTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKReadDataTimeModel.h; sourceTree = "<group>"; };
 		00914D6522B3519E00E89753 /* MKReadDataTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKReadDataTimeModel.m; sourceTree = "<group>"; };
 		00914D6722B3519E00E89753 /* MKConfigInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKConfigInterfaceController.m; sourceTree = "<group>"; };
@@ -92,6 +102,7 @@
 		00914D7B22B377F100E89753 /* MKCustomScreenDisplayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKCustomScreenDisplayModel.m; sourceTree = "<group>"; };
 		00914D7D22B37BD500E89753 /* MKConfigUserDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKConfigUserDataModel.h; sourceTree = "<group>"; };
 		00914D7E22B37BD500E89753 /* MKConfigUserDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKConfigUserDataModel.m; sourceTree = "<group>"; };
+		00D42A102447FCB3003AA084 /* dialUI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dialUI.jpg; path = "../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/1b89d351ece5b595dc3c0529f25ad6d8/Message/MessageTemp/0b0e3d899106279d53f79df19985fd82/Image/dialUI.jpg"; sourceTree = "<group>"; };
 		2CFBBE3CF4B52F51B199A8B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2EB88843B8A62F6B94B9B9E1 /* FitpoloSDK-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "FitpoloSDK-iOS.podspec"; path = "../FitpoloSDK-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4961C2031B40F3BD0F3DC1F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -145,6 +156,7 @@
 		0010709322B22360008AFFE7 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				009137DA244808A70014EA95 /* photoPicker */,
 				001070CE22B23D37008AFFE7 /* interfacePage */,
 				001070CA22B235F8008AFFE7 /* MKHudManager */,
 				0010709422B22360008AFFE7 /* scanPage */,
@@ -192,6 +204,10 @@
 		001070B522B228ED008AFFE7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				009137D8244806400014EA95 /* dialUI2.jpg */,
+				009137D42447FF0B0014EA95 /* deviceModule_fitpolo709Icon@2x.png */,
+				009137D52447FF0B0014EA95 /* deviceModule_fitpolo709Icon@3x.png */,
+				00D42A102447FCB3003AA084 /* dialUI.jpg */,
 				001070C622B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png */,
 				001070C722B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png */,
 				001070B622B228ED008AFFE7 /* deviceModule_fitpolo705Icon@2x.png */,
@@ -222,6 +238,15 @@
 				00914D6322B3519E00E89753 /* model */,
 			);
 			path = interfacePage;
+			sourceTree = "<group>";
+		};
+		009137DA244808A70014EA95 /* photoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				009137DB244808A70014EA95 /* MKDeviceModulePhotoPicker.h */,
+				009137DC244808A70014EA95 /* MKDeviceModulePhotoPicker.m */,
+			);
+			path = photoPicker;
 			sourceTree = "<group>";
 		};
 		00914D6322B3519E00E89753 /* model */ = {
@@ -435,7 +460,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				001070C822B231CA008AFFE7 /* deviceModule_refreshIcon@2x.png in Resources */,
+				009137D72447FF0B0014EA95 /* deviceModule_fitpolo709Icon@3x.png in Resources */,
+				00D42A112447FCB3003AA084 /* dialUI.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				009137D9244806400014EA95 /* dialUI2.jpg in Resources */,
 				001070C522B228ED008AFFE7 /* deviceModule_fitpolo706Icon@2x.png in Resources */,
 				001070C022B228ED008AFFE7 /* deviceModule_fitpolo707Icon@2x.png in Resources */,
 				001070BE22B228ED008AFFE7 /* deviceModule_fitpolo705Icon@2x.png in Resources */,
@@ -445,6 +473,7 @@
 				001070C222B228ED008AFFE7 /* deviceModule_fitpolo701Icon@2x.png in Resources */,
 				001070C422B228ED008AFFE7 /* deviceModule_fitpolo706Icon@3x.png in Resources */,
 				001070C922B231CA008AFFE7 /* deviceModule_refreshIcon@3x.png in Resources */,
+				009137D62447FF0B0014EA95 /* deviceModule_fitpolo709Icon@2x.png in Resources */,
 				001070C322B228ED008AFFE7 /* deviceModule_fitpolo701Icon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +556,7 @@
 				00914D7022B3519E00E89753 /* MKInterfaceController.m in Sources */,
 				001070A122B224F6008AFFE7 /* MKBindDeviceLayout.m in Sources */,
 				001070CD22B235F8008AFFE7 /* MKHudManager.m in Sources */,
+				009137DD244808A80014EA95 /* MKDeviceModulePhotoPicker.m in Sources */,
 				00914D7C22B377F100E89753 /* MKCustomScreenDisplayModel.m in Sources */,
 				001070A322B224F6008AFFE7 /* MKBindDeviceCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -686,6 +716,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -704,6 +735,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

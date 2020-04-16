@@ -1,6 +1,6 @@
 {
   "name": "FitpoloSDK-iOS",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of FitpoloSDK-iOS.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Fitpolo/FitpoloSDK-iOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Fitpolo/FitpoloSDK-iOS.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
@@ -149,6 +149,10 @@
           "source_files": "FitpoloSDK-iOS/Classes/interface/userData/**"
         }
       ]
+    },
+    {
+      "name": "update",
+      "source_files": "FitpoloSDK-iOS/Classes/update/**"
     }
   ]
 }

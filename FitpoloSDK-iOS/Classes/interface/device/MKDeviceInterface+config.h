@@ -142,7 +142,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)clearDeviceDataWithSucBlock:(mk_deviceInterfaceSucBlock)sucBlock
                         failedBlock:(mk_deviceInterfaceFailedBlock)failedBlock;
 
-#pragma mark - 非701特有
+#pragma mark - H701 doesn't support.
 
 /**
  Set do not disturb mode, H701 doesn't support.
@@ -166,7 +166,7 @@ NS_ASSUME_NONNULL_BEGIN
                sucBlock:(mk_deviceInterfaceSucBlock)sucBlock
             failedBlock:(mk_deviceInterfaceFailedBlock)failedBlock;
 
-#pragma mark - 706、707特有
+#pragma mark - H701 and H705 doesn't support.
 /**
  Set H706 bracelet current display language.
  
@@ -211,6 +211,18 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)configScreenList:(NSArray <NSString *>*)screenList
                 sucBlock:(mk_deviceInterfaceSucBlock)sucBlock
              failedBlock:(mk_deviceInterfaceFailedBlock)failedBlock;
+
+#pragma mark - Only H709 supports
+
+/// H709 bracelet dial upgrade.
+/// When the dial UI is upgraded, you need to call this interface to tell the bracelet which bracelet to upgrade. Only after the call is successful, you can call the [[mk_fitpoloUpdateCenter sharedInstance] startUpdateProcessWithPackageData: successBlock: progressBlock: failedBlock:] method to upgrade.
+/// Note: The mage size must be 240px * 240px.The image data sent to the bracelet should be RGB565 data instead of the commonly used RGB888 data.I
+/// @param index Currently only two dials support upgrade, 0 (corresponding to the third dial setting page) / and 1 (corresponding to the fourth dial setting page).
+/// @param sucBlock success callback
+/// @param failedBlock fail callback
++ (void)configH709DialStyleCustomUI:(MKH709CustomUIIndex)index
+                           sucBlock:(mk_deviceInterfaceSucBlock)sucBlock
+                        failedBlock:(mk_deviceInterfaceFailedBlock)failedBlock;
 
 @end
 

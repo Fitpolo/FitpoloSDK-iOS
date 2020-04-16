@@ -11,3 +11,5 @@
 
 #import "MKDeviceInterfaceHeader.h"
 #import "MKUserDataInterfaceHeader.h"
+
+#import "mk_fitpoloUpdateCenter.h"

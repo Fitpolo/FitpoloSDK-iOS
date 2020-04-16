@@ -516,7 +516,7 @@ static NSInteger const scanConnectMacCount = 2;
         //701
         return NO;
     }
-    if ((self.deviceType == mk_fitpolo705 || self.deviceType == mk_fitpolo706)
+    if ((self.deviceType == mk_fitpolo705 || self.deviceType == mk_fitpolo706 || self.deviceType == mk_fitpolo707 || self.deviceType == mk_fitpolo709)
         && (!self.connectedPeripheral.updateWrite || !self.connectedPeripheral.updateNotify)) {
         //705、706
         return NO;
@@ -677,9 +677,6 @@ static NSInteger const scanConnectMacCount = 2;
         return nil;
     }
     NSString *temp = [mk_fitpoloAdopter hexStringFromData:data];
-    temp = [temp stringByReplacingOccurrencesOfString:@" " withString:@""];
-    temp = [temp stringByReplacingOccurrencesOfString:@"<" withString:@""];
-    temp = [temp stringByReplacingOccurrencesOfString:@">" withString:@""];
     NSString *macAddress = [NSString stringWithFormat:@"%@-%@-%@-%@-%@-%@",
                             [temp substringWithRange:NSMakeRange(0, 2)],
                             [temp substringWithRange:NSMakeRange(2, 2)],
@@ -702,6 +699,9 @@ static NSInteger const scanConnectMacCount = 2;
     }else if ([deviceType isEqualToString:@"07"]) {
         //707
         dataModel.deviceType = mk_fitpolo707;
+    }else if ([deviceType isEqualToString:@"09"]) {
+        //709
+        dataModel.deviceType = mk_fitpolo709;
     }
     dataModel.deviceName = advDic[CBAdvertisementDataLocalNameKey];
     dataModel.rssi = [NSString stringWithFormat:@"%ld",(long)[rssi integerValue]];
@@ -1107,6 +1107,8 @@ static NSInteger const scanConnectMacCount = 2;
             return @"读取706间隔计步数据";
         case mk_configSearchPhoneOperation:
             return @"设置搜索手机功能";
+        case mk_configCustomDialStyleOperation:
+            return @"设置自定义表盘";
         case mk_defaultTaskOperationID:
             return @"";
     }

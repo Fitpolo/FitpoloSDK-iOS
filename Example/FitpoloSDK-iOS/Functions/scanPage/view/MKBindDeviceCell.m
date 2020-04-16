@@ -82,6 +82,8 @@ static CGFloat const deviceIconHeight = 102.f;
         iconName = @"deviceModule_fitpolo706Icon.png";
     }else if (_deviceModel.deviceType == mk_fitpolo707) {
         iconName = @"deviceModule_fitpolo707Icon.png";
+    }else if (_deviceModel.deviceType == mk_fitpolo709) {
+        iconName = @"deviceModule_fitpolo709Icon.png";
     }
     self.deviceIcon.image = [UIImage imageNamed:iconName];
     if (_deviceModel.deviceMac) {

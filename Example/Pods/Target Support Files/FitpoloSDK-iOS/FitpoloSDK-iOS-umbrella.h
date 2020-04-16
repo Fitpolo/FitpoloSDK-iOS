@@ -33,6 +33,7 @@
 #import "mk_fitpoloCurrentAdopter.h"
 #import "mk_fitpoloCurrentParser.h"
 #import "mk_fitpoloTaskOperation.h"
+#import "mk_fitpoloUpdateCenter.h"
 
 FOUNDATION_EXPORT double FitpoloSDK_iOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char FitpoloSDK_iOSVersionString[];

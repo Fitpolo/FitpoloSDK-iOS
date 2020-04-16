@@ -1,63 +1,65 @@
 PODS:
-  - FitpoloSDK-iOS (0.1.0):
-    - FitpoloSDK-iOS/adopter (= 0.1.0)
-    - FitpoloSDK-iOS/category (= 0.1.0)
-    - FitpoloSDK-iOS/centralManager (= 0.1.0)
-    - FitpoloSDK-iOS/header (= 0.1.0)
-    - FitpoloSDK-iOS/interface (= 0.1.0)
-    - FitpoloSDK-iOS/log (= 0.1.0)
-    - FitpoloSDK-iOS/task (= 0.1.0)
-  - FitpoloSDK-iOS/adopter (0.1.0):
+  - FitpoloSDK-iOS (0.1.2):
+    - FitpoloSDK-iOS/adopter (= 0.1.2)
+    - FitpoloSDK-iOS/category (= 0.1.2)
+    - FitpoloSDK-iOS/centralManager (= 0.1.2)
+    - FitpoloSDK-iOS/header (= 0.1.2)
+    - FitpoloSDK-iOS/interface (= 0.1.2)
+    - FitpoloSDK-iOS/log (= 0.1.2)
+    - FitpoloSDK-iOS/task (= 0.1.2)
+    - FitpoloSDK-iOS/update (= 0.1.2)
+  - FitpoloSDK-iOS/adopter (0.1.2):
     - FitpoloSDK-iOS/header
-  - FitpoloSDK-iOS/category (0.1.0)
-  - FitpoloSDK-iOS/centralManager (0.1.0):
+  - FitpoloSDK-iOS/category (0.1.2)
+  - FitpoloSDK-iOS/centralManager (0.1.2):
     - FitpoloSDK-iOS/adopter
     - FitpoloSDK-iOS/category
     - FitpoloSDK-iOS/header
     - FitpoloSDK-iOS/log
     - FitpoloSDK-iOS/task/operation
-  - FitpoloSDK-iOS/header (0.1.0)
-  - FitpoloSDK-iOS/interface (0.1.0):
-    - FitpoloSDK-iOS/adopter
-    - FitpoloSDK-iOS/category
-    - FitpoloSDK-iOS/centralManager
-    - FitpoloSDK-iOS/header
-    - FitpoloSDK-iOS/interface/device (= 0.1.0)
-    - FitpoloSDK-iOS/interface/userData (= 0.1.0)
-    - FitpoloSDK-iOS/log
-    - FitpoloSDK-iOS/task/operation
-  - FitpoloSDK-iOS/interface/device (0.1.0):
+  - FitpoloSDK-iOS/header (0.1.2)
+  - FitpoloSDK-iOS/interface (0.1.2):
     - FitpoloSDK-iOS/adopter
     - FitpoloSDK-iOS/category
     - FitpoloSDK-iOS/centralManager
     - FitpoloSDK-iOS/header
+    - FitpoloSDK-iOS/interface/device (= 0.1.2)
+    - FitpoloSDK-iOS/interface/userData (= 0.1.2)
     - FitpoloSDK-iOS/log
     - FitpoloSDK-iOS/task/operation
-  - FitpoloSDK-iOS/interface/userData (0.1.0):
+  - FitpoloSDK-iOS/interface/device (0.1.2):
     - FitpoloSDK-iOS/adopter
     - FitpoloSDK-iOS/category
     - FitpoloSDK-iOS/centralManager
     - FitpoloSDK-iOS/header
     - FitpoloSDK-iOS/log
     - FitpoloSDK-iOS/task/operation
-  - FitpoloSDK-iOS/log (0.1.0):
+  - FitpoloSDK-iOS/interface/userData (0.1.2):
+    - FitpoloSDK-iOS/adopter
+    - FitpoloSDK-iOS/category
+    - FitpoloSDK-iOS/centralManager
     - FitpoloSDK-iOS/header
-  - FitpoloSDK-iOS/task (0.1.0):
-    - FitpoloSDK-iOS/task/fitpolo701 (= 0.1.0)
-    - FitpoloSDK-iOS/task/fitpoloCurrent (= 0.1.0)
-    - FitpoloSDK-iOS/task/operation (= 0.1.0)
-  - FitpoloSDK-iOS/task/fitpolo701 (0.1.0):
+    - FitpoloSDK-iOS/log
+    - FitpoloSDK-iOS/task/operation
+  - FitpoloSDK-iOS/log (0.1.2):
+    - FitpoloSDK-iOS/header
+  - FitpoloSDK-iOS/task (0.1.2):
+    - FitpoloSDK-iOS/task/fitpolo701 (= 0.1.2)
+    - FitpoloSDK-iOS/task/fitpoloCurrent (= 0.1.2)
+    - FitpoloSDK-iOS/task/operation (= 0.1.2)
+  - FitpoloSDK-iOS/task/fitpolo701 (0.1.2):
     - FitpoloSDK-iOS/adopter
     - FitpoloSDK-iOS/header
     - FitpoloSDK-iOS/log
-  - FitpoloSDK-iOS/task/fitpoloCurrent (0.1.0):
+  - FitpoloSDK-iOS/task/fitpoloCurrent (0.1.2):
     - FitpoloSDK-iOS/adopter
     - FitpoloSDK-iOS/header
     - FitpoloSDK-iOS/log
-  - FitpoloSDK-iOS/task/operation (0.1.0):
+  - FitpoloSDK-iOS/task/operation (0.1.2):
     - FitpoloSDK-iOS/header
     - FitpoloSDK-iOS/task/fitpolo701
     - FitpoloSDK-iOS/task/fitpoloCurrent
+  - FitpoloSDK-iOS/update (0.1.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - Toast (4.0.0)
@@ -73,7 +75,7 @@ DEPENDENCIES:
   - YYKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Masonry
     - MBProgressHUD
     - Toast
@@ -84,7 +86,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FitpoloSDK-iOS: cc62fade0ab8562cc83d20f89191058f6f28fad7
+  FitpoloSDK-iOS: 819371350d6684dae84eac491e985021d1e737ba
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
@@ -92,4 +94,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b395413238bdd00bfeede17ac67e5ed542923c73
 
-COCOAPODS: 1.7.0.rc.1
+COCOAPODS: 1.8.4

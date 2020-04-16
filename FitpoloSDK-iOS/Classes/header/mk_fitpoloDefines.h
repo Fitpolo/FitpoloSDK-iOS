@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, mk_fitpoloDeviceType) {
     mk_fitpolo705,
     mk_fitpolo706,
     mk_fitpolo707,
+    mk_fitpolo709,
 };
 
 typedef NS_ENUM(NSInteger, mk_fitpoloConnectStatus) {

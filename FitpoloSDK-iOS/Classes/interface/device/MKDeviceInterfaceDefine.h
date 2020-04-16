@@ -173,3 +173,8 @@ typedef NS_ENUM(NSInteger, MKAlarmClockType) {
 @property (nonatomic, assign)BOOL isOn;
 
 @end
+
+typedef NS_ENUM(NSInteger, MKH709CustomUIIndex) {
+    MKH709CustomUIIndex0,           //表盘0
+    MKH709CustomUIIndex1,           //表盘1
+};
